@@ -9,6 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Beer4Food" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="9Pp-9M-JCh" id="ajH-Jw-mIk"/>
+                <outlet property="listTableView" destination="PQH-gZ-iUr" id="zOc-7s-bcA"/>
+                <outlet property="searchBar" destination="6dK-Rn-dZo" id="M7D-fu-WZ8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,11 +30,11 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-wu-Mmn">
                             <rect key="frame" x="10" y="66" width="394" height="752"/>
                             <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PQH-gZ-iUr">
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PQH-gZ-iUr">
                                     <rect key="frame" x="0.0" y="0.0" width="394" height="752"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </tableView>
-                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9Pp-9M-JCh">
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9Pp-9M-JCh">
                                     <rect key="frame" x="178.5" y="357.5" width="37" height="37"/>
                                 </activityIndicatorView>
                             </subviews>

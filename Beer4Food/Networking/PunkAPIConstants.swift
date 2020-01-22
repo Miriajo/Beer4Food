@@ -15,14 +15,23 @@ private var path = "/v2/beers"
 
 struct PunkAPIConstants {
     
-    static func getSearchByFoodURL(withQueryParam queryParam: String) -> URL {
+    static func getSearchByFoodURL(withQueryParam queryParam: String, page: Int) -> URL {
         
         var components = URLComponents()
         components.scheme = scheme
         components.host = host
         components.path = path
-        components.queryItems = [URLQueryItem(name: "food", value: queryParam)]
         
+        let pageQueryItem = URLQueryItem(name: "page", value: "\(page)")
+        let pageSizeQueryItem = URLQueryItem(name: "per_page", value: "50")
+        
+        if (queryParam != "") {
+            let foodSearchQueryItem = URLQueryItem(name: "food", value: queryParam)
+            components.queryItems = [pageQueryItem, pageSizeQueryItem, foodSearchQueryItem]
+        } else {
+            components.queryItems = [pageQueryItem, pageSizeQueryItem]
+        }
+            
         return components.url!
     }
     

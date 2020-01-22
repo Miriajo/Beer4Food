@@ -18,10 +18,4 @@ extension DateFormatter {
         return formatter
     }() // parenthesis at the end are to execute
 
-    static let longAPIDateFormatter: DateFormatter = {
-       
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter
-    }()
 }

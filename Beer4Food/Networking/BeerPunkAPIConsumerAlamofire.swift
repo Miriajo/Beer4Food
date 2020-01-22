@@ -12,9 +12,9 @@ import Alamofire
 class BeerPunkAPIConsumerAlamofire: BeerItemAPIConsumable {
     
 
-    func getSearchBeerItems(byFood foodSearch: String, success: @escaping ([Beer]) -> Void, failure: @escaping (Error?) -> Void) {
+    func getSearchBeerItems(byFood foodSearch: String, page: Int, success: @escaping ([Beer]) -> Void, failure: @escaping (Error?) -> Void) {
           
-          Alamofire.request(PunkAPIConstants.getSearchByFoodURL(withQueryParam: foodSearch)).responseData { (response) in
+          Alamofire.request(PunkAPIConstants.getSearchByFoodURL(withQueryParam: foodSearch, page: page)).responseData { (response) in
               switch response.result {
               case .failure(let error):
                 assert(Thread.current == Thread.main)

@@ -21,6 +21,13 @@
 		5541D4F823D11F390035EE82 /* Beer4FoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541D4F723D11F390035EE82 /* Beer4FoodTests.swift */; };
 		557FBEA923D5C53F003D46AD /* DateFormatter+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FBEA823D5C53F003D46AD /* DateFormatter+Custom.swift */; };
 		557FBEAB23D5C5D3003D46AD /* UIImageView+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FBEAA23D5C5D3003D46AD /* UIImageView+Networking.swift */; };
+		55BBF7C223D7B5200063CCA0 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF7C123D7B5200063CCA0 /* UIViewController+Navigation.swift */; };
+		55BBF7C523D7BCBC0063CCA0 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF7C323D7BCBC0063CCA0 /* BeerTableViewCell.swift */; };
+		55BBF7C623D7BCBC0063CCA0 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55BBF7C423D7BCBC0063CCA0 /* BeerTableViewCell.xib */; };
+		55BBF7C823D7E0620063CCA0 /* BeerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF7C723D7E0620063CCA0 /* BeerTest.swift */; };
+		55BBF7C923D7E11B0063CCA0 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553C3D5223D1D156000905A6 /* Beer.swift */; };
+		55BBF7CA23D7E1590063CCA0 /* DateFormatter+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FBEA823D5C53F003D46AD /* DateFormatter+Custom.swift */; };
+		55BBF7CC23D801850063CCA0 /* beerMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 55BBF7CB23D801850063CCA0 /* beerMock.json */; };
 		55D963A023D1463C00B9F46E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D9639E23D1463C00B9F46E /* SearchViewController.swift */; };
 		55D963A123D1463C00B9F46E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D9639F23D1463C00B9F46E /* SearchViewController.xib */; };
 		985A1E9A0A23A5BC1F50253D /* Pods_Beer4Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A33940F783A435E848413C3 /* Pods_Beer4Food.framework */; };
@@ -60,6 +67,11 @@
 		5541D4F923D11F390035EE82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557FBEA823D5C53F003D46AD /* DateFormatter+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Custom.swift"; sourceTree = "<group>"; };
 		557FBEAA23D5C5D3003D46AD /* UIImageView+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Networking.swift"; sourceTree = "<group>"; };
+		55BBF7C123D7B5200063CCA0 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		55BBF7C323D7BCBC0063CCA0 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		55BBF7C423D7BCBC0063CCA0 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
+		55BBF7C723D7E0620063CCA0 /* BeerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTest.swift; sourceTree = "<group>"; };
+		55BBF7CB23D801850063CCA0 /* beerMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beerMock.json; sourceTree = "<group>"; };
 		55D9639E23D1463C00B9F46E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		55D9639F23D1463C00B9F46E /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		7A33940F783A435E848413C3 /* Pods_Beer4Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beer4Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +175,10 @@
 		5541D4F623D11F390035EE82 /* Beer4FoodTests */ = {
 			isa = PBXGroup;
 			children = (
+				55BBF7CB23D801850063CCA0 /* beerMock.json */,
 				5541D4F723D11F390035EE82 /* Beer4FoodTests.swift */,
 				5541D4F923D11F390035EE82 /* Info.plist */,
+				55BBF7C723D7E0620063CCA0 /* BeerTest.swift */,
 			);
 			path = Beer4FoodTests;
 			sourceTree = "<group>";
@@ -174,6 +188,7 @@
 			children = (
 				557FBEA823D5C53F003D46AD /* DateFormatter+Custom.swift */,
 				557FBEAA23D5C5D3003D46AD /* UIImageView+Networking.swift */,
+				55BBF7C123D7B5200063CCA0 /* UIViewController+Navigation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,6 +232,8 @@
 		55F234CB23D663E50034B307 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				55BBF7C323D7BCBC0063CCA0 /* BeerTableViewCell.swift */,
+				55BBF7C423D7BCBC0063CCA0 /* BeerTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -315,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5541D4ED23D11F390035EE82 /* LaunchScreen.storyboard in Resources */,
+				55BBF7C623D7BCBC0063CCA0 /* BeerTableViewCell.xib in Resources */,
 				5541D4EA23D11F390035EE82 /* Assets.xcassets in Resources */,
 				5524EFE223D14D28004A111D /* DetailViewController.xib in Resources */,
 				55D963A123D1463C00B9F46E /* SearchViewController.xib in Resources */,
@@ -325,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BBF7CC23D801850063CCA0 /* beerMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BBF7C223D7B5200063CCA0 /* UIViewController+Navigation.swift in Sources */,
 				553C3D6823D1D7AF000905A6 /* BeerPunkAPIConsumerAlamofire.swift in Sources */,
 				553C3D6D23D1E1BF000905A6 /* BeerItemAPIConsumable.swift in Sources */,
 				557FBEA923D5C53F003D46AD /* DateFormatter+Custom.swift in Sources */,
@@ -407,6 +427,7 @@
 				557FBEAB23D5C5D3003D46AD /* UIImageView+Networking.swift in Sources */,
 				553C3D5323D1D156000905A6 /* Beer.swift in Sources */,
 				553C3D6A23D1D888000905A6 /* PunkAPIConstants.swift in Sources */,
+				55BBF7C523D7BCBC0063CCA0 /* BeerTableViewCell.swift in Sources */,
 				55D963A023D1463C00B9F46E /* SearchViewController.swift in Sources */,
 				5541D4E323D11F380035EE82 /* SceneDelegate.swift in Sources */,
 				553C3D6F23D1E335000905A6 /* DataRepository.swift in Sources */,
@@ -418,6 +439,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5541D4F823D11F390035EE82 /* Beer4FoodTests.swift in Sources */,
+				55BBF7CA23D7E1590063CCA0 /* DateFormatter+Custom.swift in Sources */,
+				55BBF7C923D7E11B0063CCA0 /* Beer.swift in Sources */,
+				55BBF7C823D7E0620063CCA0 /* BeerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
